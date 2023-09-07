@@ -16,3 +16,6 @@
 
 ##### CURL 设置返回格式
 - curl -vo /dev/null -w "a=${a},b=${b}" "[url]" --resolve [domain]:[port]:[host]
+
+##### CURL 跳过ssl验证，静默模式
+- curl -vo -s /dev/null -w "a=${a},b=${b}" "[url]" --resolve [domain]:[port]:[host] -k

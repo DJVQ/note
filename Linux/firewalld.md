@@ -12,3 +12,6 @@
 #### add direct rule
 - firewall-cmd --permanent --direct --add-rule [ipv4/ipv6] [raw|manage|nat|filter] [PREROUTING|POSTROUTING|INPUT|OUTPUT|FORWARD] [permission level:0、1...] --destination [host] --protocol [vrrp] -j [ACCEPT|DROP|REJECT|LOG|NOTRACK|DNAT|SNAT|MASQUERADE|REDIRECT...]
 - firewall-cmd --permanent --direct --add-rule [ipv4/ipv6] [raw|manage|nat|filter] [PREROUTING|POSTROUTING|INPUT|OUTPUT|FORWARD] [permission level:0、1...]  -p [protocol] --dport [port]  -j [ACCEPT|DROP|REJECT|LOG|NOTRACK|DNAT|SNAT|MASQUERADE|REDIRECT...]
+
+#### check the firewalld status
+- systemctl status firewalld|grep "running"

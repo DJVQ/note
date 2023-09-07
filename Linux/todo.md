@@ -5,3 +5,5 @@
 #### 3. shell linux
 
 #### 4. compile nginx to support http2 and compile luajit for kernal
+
+#### 5. keepalive heartbeat
